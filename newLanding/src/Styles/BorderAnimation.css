@@ -1,0 +1,47 @@
+.rotating-border {
+    position: relative;
+    display: inline-block;
+    padding: 2px; /* Adjust to control border thickness */
+    border-radius: 1rem; /* Matches rounded-xl */
+    background: linear-gradient(
+      45deg,
+      #224cf0,
+      #3789dd,
+      #3285fb,
+      #36509b,
+      #2b3c70,
+      #9a2da0,
+      #8e49fa,
+      #ef47b8,
+      #ff43ff,
+      #692f84,
+      #602f80,
+      #363265
+    );
+    background-size: 300% 300%;
+    animation: rotateGradient 4s linear infinite;
+  }
+  
+  .rotating-border .content {
+    background-color: #000000; /* Matches the button background */
+    border-radius: inherit;
+    padding: 10px 20px; /* Matches the px-5 and py-2 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.875rem; /* Matches text-sm */
+    font-weight: 600; /* Matches font-semibold */
+  }
+  @keyframes rotateGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
